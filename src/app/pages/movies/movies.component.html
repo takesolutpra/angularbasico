@@ -1,0 +1,18 @@
+<p>
+    movies works!
+</p>
+
+<ul class="list-group">
+    <li *ngFor="let movie of movies" class="list-group-item">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{movie.background_image}}" width="100px" height="100px">
+            </div>
+            <div class="col-10">
+                <h2>{{ movie.title }}</h2> <br>
+                <small>{{ movie.summary }}</small>
+
+            </div>
+        </div>
+    </li>
+</ul>
